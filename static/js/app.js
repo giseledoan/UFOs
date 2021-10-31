@@ -4,12 +4,12 @@ const tableData = data;
 // point our data to our HTML page, use d3 to 
 //tell JavaScript to look for the <tbody> tags in the HTML
 var tbody = d3.select("tbody");
-console.log("My script is stored outside of the HTML");
+//console.log("My script is stored outside of the HTML");
 
 // Clear existing data before adding data from data.js
 function buildTable(data) {
-    tbody.html ("" );
-}
+  tbody.html ("");
+
 
 // loop through each object in the data
   // and append a row and cells for each value in the row
@@ -25,7 +25,7 @@ function buildTable(data) {
       }
     );
   });
-
+}
 
 // filter data
 function handleClick() {
